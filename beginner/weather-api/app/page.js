@@ -79,7 +79,7 @@ export default function WeatherPage() {
           API Learning Hub
         </a>
         <div className="nav-right">
-          <span className="tier-badge tier-badge-beginner">☀ Beginner</span>
+          <span className="tier-badge tier-badge-beginner"> Beginner</span>
           <a className="nav-link" href={HOMEPAGE_URL}>← All Projects</a>
           <div className="theme-icons">
             <span className="theme-sun" style={{ opacity: dark ? 0.3 : 1 }}>☀</span>
