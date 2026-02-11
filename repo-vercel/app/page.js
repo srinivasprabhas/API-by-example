@@ -17,6 +17,16 @@ const PROJECTS = [
     teaches: ["GET requests", "Query params", "Error handling"],
     url: "https://api-by-example-weather-api.vercel.app/",
   },
+  {
+    id: "currency-converter-api",
+    tier: "beginner",
+    number: 2,
+    title: "Currency Converter API",
+    api: "ExchangeRate API",
+    description: "Convert between currencies using real-time exchange rates.",
+    teaches: ["GET requests", "Query params", "Error handling"],
+    url: "https://api-by-example-currency-converter-api.vercel.app/",
+  },
   // {
   //   id: "joke-generator",
   //   tier: "beginner",
