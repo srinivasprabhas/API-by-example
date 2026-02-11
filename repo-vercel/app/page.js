@@ -7,16 +7,16 @@ import { useState } from "react";
 // ============================================
 const PROJECTS = [
   // --- BEGINNER ---
-  // {
-  //   id: "weather-api",
-  //   tier: "beginner",
-  //   number: 1,
-  //   title: "Weather App API",
-  //   api: "OpenWeatherMap",
-  //   description: "Fetch real-time weather data for any city.",
-  //   teaches: ["GET requests", "Query params", "Error handling"],
-  //   url: "https://weather-api-abe.vercel.app",
-  // },
+  {
+    id: "weather-api",
+    tier: "beginner",
+    number: 1,
+    title: "Weather App API",
+    api: "OpenWeatherMap",
+    description: "Fetch real-time weather data for any city.",
+    teaches: ["GET requests", "Query params", "Error handling"],
+    url: "https://api-by-example-weather-api.vercel.app/",
+  },
   // {
   //   id: "joke-generator",
   //   tier: "beginner",

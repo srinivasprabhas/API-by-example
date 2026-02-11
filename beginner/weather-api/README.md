@@ -96,4 +96,4 @@ Get your free key at [openweathermap.org/api](https://openweathermap.org/api).
 
 ## Live Demo Link
 
-[weather-api-abe.vercel.app](https://weather-api-abe.vercel.app)
+[api-by-example-weather-api.vercel.app](https://api-by-example-weather-api.vercel.app/)
