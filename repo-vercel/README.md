@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# API by Example — Homepage
 
-## Getting Started
+The main hub website for the [API by Example](https://github.com/srinivasprabhas/api-by-example) learning repository. Deploy this to your primary URL (e.g. `api-by-example.vercel.app`).
 
-First, run the development server:
+## What This Does
+
+- **Hero section** — Tagline and description of the learning hub
+- **Tier tabs** — Filter by Beginner | Intermediate | Advanced
+- **Project cards** — Each deployed project appears with title, API used, description, and link to its live demo
+- **Empty state** — When a tier has no projects yet, shows a friendly empty message
+- **Dark mode toggle** — Theme switch in navbar
+
+Only **deployed** projects appear. No "coming soon" placeholders. If it's built and live, it's listed.
+
+## Tech Used
+
+| Tool        | Purpose                    |
+|-------------|----------------------------|
+| Next.js 16  | App Router                 |
+| React 19    | UI                         |
+| JavaScript  | Language                   |
+| Vercel      | Hosting                    |
+
+No API keys. No database. Static hub page.
+
+## How to Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## How to Deploy on Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push this repo to GitHub
+2. [vercel.com](https://vercel.com) → Add New → Project → Import repo
+3. **Root Directory:** Set to `repo-vercel` (important)
+4. Deploy — no environment variables needed
 
-## Learn More
+## How to Add a Project
 
-To learn more about Next.js, take a look at the following resources:
+After deploying a new project (e.g. `beginner/weather-api`):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Open `app/page.js`
+2. Find the `PROJECTS` array
+3. Add an entry:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```js
+{
+  id: "weather-api",
+  tier: "beginner",
+  number: 1,
+  title: "Weather App API",
+  api: "OpenWeatherMap",
+  description: "Fetch real-time weather data for any city.",
+  teaches: ["GET requests", "Query params", "Error handling"],
+  url: "https://api-by-example-weather-api.vercel.app/",
+},
+```
 
-## Deploy on Vercel
+4. Commit and push — Vercel auto-redeploys
+5. The project appears on the homepage under its tier tab
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+repo-vercel/
+├── app/
+│   ├── globals.css    # Design system (DM Sans, JetBrains Mono)
+│   ├── layout.js      # Root layout
+│   └── page.js        # Hero + tier tabs + project cards
+├── public/
+├── package.json
+└── README.md
+```
+
+## Live Demo
+
+[api-by-example.vercel.app](https://api-by-example.vercel.app) *(update with your actual URL)*
