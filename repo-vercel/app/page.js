@@ -27,6 +27,17 @@ const PROJECTS = [
     teaches: ["GET requests", "Query params", "Error handling"],
     url: "https://api-by-example-currency-converter-api.vercel.app/",
   },
+  {
+    id: "joke-generator",
+    tier: "beginner",
+    number: 3,
+    title: "Joke Generator API",
+    api: "JokeAPI",
+    description: "Random jokes on demand — no API key needed.",
+    teaches: ["Simple GET", "JSON formats", "No auth required"],
+    url: "https://api-by-example-joke-generator-api.vercel.app",
+    status: "active",
+  },
   // {
   //   id: "joke-generator",
   //   tier: "beginner",
