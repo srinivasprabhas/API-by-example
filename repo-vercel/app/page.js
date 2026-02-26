@@ -35,7 +35,7 @@ const PROJECTS = [
     api: "JokeAPI",
     description: "Random jokes on demand — no API key needed.",
     teaches: ["Simple GET", "JSON formats", "No auth required"],
-    url: "https://api-by-example-joke-generator.vercel.app/",
+    url: "https://api-by-example-joke-generator-jl6soni2o.vercel.app/",
     status: "active",
   },
   // {
